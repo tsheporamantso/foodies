@@ -10,7 +10,7 @@ const MainHeader = () => {
   return (
     <>
       <MainHeaderBackground />
-      <header className={`${classes.header} mb-36`}>
+      <header className={`${classes.header} mb-28`}>
         <Link href={"/"} className={classes.logo}>
           <Image src={logoImg} alt="A plate with food in it" priority />
           NextLevel Food
