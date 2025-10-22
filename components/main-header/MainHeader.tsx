@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import MainHeaderBackground from "./MainHeaderBackground";
 import logoImg from "@/assets/logo.png";
 import classes from "./main-header.module.css";
-import MainHeaderBackground from "./MainHeaderBackground";
+import NavLinks from "./NavLinks";
 
 const MainHeader = () => {
   return (
@@ -17,10 +18,10 @@ const MainHeader = () => {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <Link href={"/meals"}>Browse Meals</Link>
+              <NavLinks href="/meals">Browse Meals</NavLinks>
             </li>
             <li>
-              <Link href={"/community"}>Foodies Community</Link>
+              <NavLinks href="/community">Foodies Community</NavLinks>
             </li>
           </ul>
         </nav>
