@@ -1,7 +1,10 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
-      <h1 style={{ color: "white", textAlign: "center" }}>
+      <h1
+        className="mt-6 text-3xl"
+        style={{ color: "white", textAlign: "center" }}
+      >
         Time to get started!
       </h1>
     </main>
