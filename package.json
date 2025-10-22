@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "better-sqlite3": "^12.4.1",
     "nanoid": "^5.1.6",
     "next": "15.5.6",
     "react": "19.1.0",
