@@ -21,7 +21,7 @@ export default function HomePage() {
       <main>
         <section className={classes.section}>
           <h2 className="text-5xl mb-4">How it works</h2>
-          <p>
+          <p className="mb-6">
             NextLevel Food is a platform for foodies to share their favorite
             recipes with the world. It&apos;s a place to discover new dishes,
             and to connect with other food lovers.
@@ -33,8 +33,8 @@ export default function HomePage() {
         </section>
 
         <section className={classes.section}>
-          <h2 className="text-5xl mb-4">Why NextLevel Food?</h2>
-          <p>
+          <h2 className="text-5xl mb-5">Why NextLevel Food?</h2>
+          <p className="mb-6">
             NextLevel Food is a platform for foodies to share their favorite
             recipes with the world. It&apos;s a place to discover new dishes,
             and to connect with other food lovers.
