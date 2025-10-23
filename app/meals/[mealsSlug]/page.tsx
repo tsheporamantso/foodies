@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./page.module.css";
 import { getMeal } from "@/lib/meals";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 type MealsDetailsPageProps = {
   params: {
@@ -12,6 +13,10 @@ type MealsDetailsPageProps = {
 const MealsDetailsPage = async ({ params }: MealsDetailsPageProps) => {
   const { mealsSlug } = await params;
   const meal = getMeal(mealsSlug);
+
+  if (!meal) {
+    notFound();
+  }
 
   meal.instructions = meal.instructions.replace(/\n/g, "<br />");
 
