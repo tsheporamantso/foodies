@@ -10,6 +10,20 @@ type MealsDetailsPageProps = {
   };
 };
 
+export async function generateMetadata({ params }: MealsDetailsPageProps) {
+  const { mealsSlug } = await params;
+  const meal = getMeal(mealsSlug);
+
+  if (!meal) {
+    notFound();
+  }
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
 const MealsDetailsPage = async ({ params }: MealsDetailsPageProps) => {
   const { mealsSlug } = await params;
   const meal = getMeal(mealsSlug);
